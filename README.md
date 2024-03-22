@@ -1,6 +1,6 @@
 # Mass Resume Scrapping Script
 
-This Python script is designed to extract data from a specific website (https://zety.com/resume-examples) that provides resume examples and categories. The script fetches and processes data from the website, including category and subcategory information, as well as HTML content for each subcategory.
+This Python script is designed to extract data from a list of websites that provides resume examples and categories. The script fetches and processes data from the website, including category and subcategory information, as well as HTML content for each subcategory. This was done to collect sample data for fine-tuning an LLM for resume generation. 
 
 ## Table of Contents
 
@@ -8,7 +8,6 @@ This Python script is designed to extract data from a specific website (https://
 - [Installation](#installation)
 - [Usage](#usage)
 - [Program Description](#program-description)
-- [License](#license)
 
 ## Prerequisites
 
@@ -28,13 +27,13 @@ pip install requests beautifulsoup4 json
 1. Clone or download the script to your local machine.
 
 ```bash
-git clone https://github.com/your-username/resume-data-extraction.git
+git clone https://github.com/aamirali-dev/resume-scrapper.git
 ```
 
 2. Navigate to the script's directory.
 
 ```bash
-cd resume-data-extraction
+cd resume-scrapper
 ```
 
 ## Usage
@@ -42,7 +41,7 @@ cd resume-data-extraction
 To run the script, simply execute it using Python:
 
 ```bash
-python resume_extraction.py
+python main.py
 ```
 
 The script will start fetching and processing data from the specified website.
@@ -51,7 +50,7 @@ The script will start fetching and processing data from the specified website.
 
 The script performs the following tasks:
 
-1. Sends a GET request to the website (https://zety.com/resume-examples).
+1. Sends a GET request to the selected websites.
 
 2. Parses the HTML content of the website using BeautifulSoup.
 
@@ -59,13 +58,6 @@ The script performs the following tasks:
 
 4. Fetches HTML content for each subcategory URL.
 
-5. Extracts the first line of HTML content for each subcategory.
+5. Extracts the HTML content for each subcategory.
 
 6. Prints or saves the data, including category and subcategory information, and the first line of HTML content.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Disclaimer
-This script is provided for educational purposes only. It is intended to demonstrate web scraping and data extraction techniques. Ensure that you comply with all relevant laws and terms of service when using this script to scrape data from websites. Use this script responsibly and ethically.
