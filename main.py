@@ -1,9 +1,4 @@
-from extractors.enhancv import EnhanCVExtractor
-from extractors.resumeexample import ResumeExampleExtractor
-from extractors.resumeio import ResumeIOExtractor
-from extractors.resumebuilder import ResumeBuilderExtractor
-from extractors.resumegenius import ResumeGeniusExtractor
-from extractors.zety import ZetyExtractor
+from extractors import EnhanCVExtractor ,ResumeExampleExtractor ,ResumeIOExtractor ,ResumeBuilderExtractor ,ResumeGeniusExtractor ,ZetyExtractor
 
 if __name__ == "__main__":
     with_resumes = [ResumeBuilderExtractor, ResumeGeniusExtractor, ZetyExtractor]
