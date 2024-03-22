@@ -24,6 +24,7 @@ class ResumeIOExtractor(Extractor):
     def extract_sub_categories(self, categories_data):
         return super().extract_sub_categories(categories_data)
 
-extractor = ResumeIOExtractor()
-categories_data = extractor.extract_resume_categories()
-print(categories_data)
+if __name__ == "__main__":
+    extractor = ResumeIOExtractor()
+    categories_data = extractor.extract_resume_categories()
+    print(categories_data)

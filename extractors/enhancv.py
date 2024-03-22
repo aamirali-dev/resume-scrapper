@@ -21,7 +21,8 @@ class EnhanCVExtractor(Extractor):
     def _get_sub_category_url(self, sub_category):
         return sub_category.get('href')
 
-extractor = EnhanCVExtractor()
-categories_data = extractor.extract_resume_categories()
-# extractor.extract_resumes(categories_data)
-print(categories_data)
+if __name__ == "__main__":
+    extractor = EnhanCVExtractor()
+    categories_data = extractor.extract_resume_categories()
+    # extractor.extract_resumes(categories_data)
+    print(categories_data)

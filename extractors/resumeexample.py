@@ -27,6 +27,7 @@ class ResumeExampleExtractor(Extractor):
     def extract_sub_categories(self, categories_data):
         return super().extract_sub_categories(categories_data)
 
-extractor = ResumeExampleExtractor()
-print(extractor.extract_resume_categories())
+if __name__ == "__main__":
+    extractor = ResumeExampleExtractor()
+    print(extractor.extract_resume_categories())
 
